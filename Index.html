@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>INPUT DATA PENGGUNA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /*  */
+    body {
+      background-image: url(flor.jpg);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    #form-container {
+      width: 500px;
+      margin: 0 auto;
+      background: transparent;
+      backdrop-filter: blur(10px);
+      border: 2px solid #795858;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    #form-container h2 {
+      text-align: center;
+      color: #2e1414;
+    }
+    #form-container input[type="text"], #form-container input[type="date"], #form-container input[type="tel"] {
+      width: 100%;
+      position: center;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 2px solid #4e3939;
+      border-radius: 20px;
+    }
+    #form-container input[type="submit"] {
+      background-color: #421b1b;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    #form-container input[type="submit"]:hover {
+      background-color: #4d2020a4;
+    }
+    #footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+      color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="form-container">
+    <h2>DATA PENGGUNA VENDING MACHINE</h2>
+    <!-- akses link script app -->
+    <form action="https://script.google.com/macros/s/AKfycbxYnk61Qn4WyMyLIfOK8DlIAnXJrLQK91d_P-9aUdUrvUOBNwd-g0vRTobj8Bu_veAA/exec" method="post">
+    <!-- end akses  -->
+
+        <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+      <label for="umur">Umur:</label>
+      <input type="text" id="umur" name="umur" required>
+      <label for="asal_daerah">Asal Daerah:</label>
+      <input type="text" id="asal_daerah" name="asal_daerah" required>
+      <input type="submit" value="Simpan Data">
+    </form>
+  </div>
+
+  <div id="footer">
+    XIA
+  </div>
+
+</body>
+</html>
